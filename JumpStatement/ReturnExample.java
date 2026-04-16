@@ -8,10 +8,13 @@ public class ReturnExample {
         System.out.println("Positive number");
     }
         
+
             public static void main(String[] args) {
                 checknumber(-5); // Output: Negative number
                 checknumber(10); // Output: Positive number
             }
+
+            
         
     }
 
