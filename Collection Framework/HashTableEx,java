@@ -1,0 +1,25 @@
+public class HashTableEx {
+    public static void main(String[] args) {
+        // HashTable is synchronized and does not allow null keys or values
+        // It is a legacy class and is generally not recommended for new code
+
+        HshTable<Integer, String> table = new HashTable<>();
+        table.put(1, "One");
+        table.put(2, "Two");
+        table.put(3, "Three");
+
+        // Get value by key   
+        System.out.println(table.get(2)); 
+
+        // Remove key-value pair
+        table.remove(3);
+
+        // Check if key exists
+        System.out.println(table.containsKey(1));
+        
+        // Check if value exists
+        System.out.println(table.containsValue("Two"));
+
+
+    }
+}   
